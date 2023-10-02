@@ -1,18 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue';
-
-onMounted(() => {
-  const hasUserPlayed = localStorage.getItem('game_finished_for_today');
-  const didUserWinLastGame = localStorage.getItem('user_won_last_game');
-  if(hasUserPlayed) {
-    if(new Date().getTime() < parseInt(hasUserPlayed) && didUserWinLastGame) {
-      userWon.value = true;
-    } else {
-      userWon.value = false;
-      guesses_remaining.value = 0;
-    }
-  }
-})
+import { computed, ref } from 'vue';
 
 const date = new Date().toISOString().slice(0, 10).replace(/-/g, "");
 
@@ -52,19 +39,16 @@ const addGuess = () => {
   if (currentGuess.value.toLowerCase() === country_code.value) {
     guesses_remaining.value = 0;
     userWon.value = true;
-    const winningDate = new Date();
-    winningDate.setHours(23, 59, 59);
-    localStorage.setItem('game_finished_for_today', parseInt(winningDate.getTime()));
-    localStorage.setItem('user_won_last_game', true);
   }
 
   if (guesses_remaining.value > 0) {
     guesses_remaining.value--;
   }
+
+  currentGuess.value = '';
 };
 
 const currentGuess = ref();
-// const gameFinished = ref(false);
 const userWon = ref(false);
 </script>
 
@@ -138,9 +122,3 @@ const userWon = ref(false);
     >{{ lookupCountry(guesses[3]) }}</div>
   </div>
 </main></template>
-
-<!-- <style>
-.flag-icon {
-  backgr: 50px;
-}
-</style> -->
