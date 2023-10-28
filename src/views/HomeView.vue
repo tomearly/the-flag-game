@@ -70,8 +70,6 @@ const addGuess = () => {
     userWon.value = true;
   }
 
-
-
   if (guesses_remaining.value > 0) {
     guesses_remaining.value--;
     console.log(country_code.value)
