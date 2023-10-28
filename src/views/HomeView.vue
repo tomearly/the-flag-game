@@ -82,13 +82,13 @@ const addGuess = () => {
     const guessedLong = guessedCountry.longitude;
 
     bearing.value = getBearing(
-      new Position(latitude, longitude),
       new Position(guessedLat, guessedLong),
+      new Position(latitude, longitude)
     );
 
     distance.value = getDistance(
-      new Position(latitude, longitude),
       new Position(guessedLat, guessedLong),
+      new Position(latitude, longitude)
     ) * 1.15078;
   }
 
