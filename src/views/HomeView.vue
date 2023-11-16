@@ -22,7 +22,7 @@ function getCardinal(angle) {
           : (offsetAngle >= 4 * degreePerDirection && offsetAngle < 5 * degreePerDirection) ? "South "
             : (offsetAngle >= 5 * degreePerDirection && offsetAngle < 6 * degreePerDirection) ? "South West"
               : (offsetAngle >= 6 * degreePerDirection && offsetAngle < 7 * degreePerDirection) ? "West"
-                : "NW";
+                : "North West";
 }
 
 
