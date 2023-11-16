@@ -77,17 +77,17 @@ const addGuess = () => {
     const { latitude, longitude} = country_codes.find(country => country.Code.toLowerCase() === country_code.value.toLowerCase());
     const guessedCountry = country_codes.find(country => country.Code.toLowerCase() === currentGuess.value.toLowerCase());
 
-    const guessedLat = guessedCountry.latitude;
-    const guessedLong = guessedCountry.longitude;
+    const guessedPosition = new Position(guessedCountry.latitude, guessedCountry.longitude);
+    const actualPosition = new Position(latitude, longitude);
 
     bearing.value = getBearing(
-      new Position(guessedLat, guessedLong),
-      new Position(latitude, longitude)
+      guessedPosition,
+      actualPosition
     );
 
     distance.value = getDistance(
-      new Position(guessedLat, guessedLong),
-      new Position(latitude, longitude)
+      guessedPosition,
+      actualPosition
     ) * 1.15078;
   }
 
