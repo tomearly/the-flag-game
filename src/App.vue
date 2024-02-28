@@ -1,5 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import { inject } from "@vercel/analytics"
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  inject()
+})
+
 </script>
 
 <template>
