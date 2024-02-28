@@ -15,7 +15,7 @@
     "cardinal-direction": "^1.1.1",
     "install": "^0.13.0",
     "pinia": "^2.1.7",
-    "postcss": "^8.4.32",
+    "postcss": "^8.4.33",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5",
     "vue3-autocomplete": "^1.0.0",
