@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@rushstack/eslint-patch':
     specifier: ^1.6.1
-    version: 1.6.1
+    version: 1.7.2
   '@vitejs/plugin-vue':
     specifier: ^5.0.0
     version: 5.0.4(vite@5.1.4)(vue@3.4.21)
@@ -786,8 +786,8 @@ packages:
     dev: true
     optional: true
 
-  /@rushstack/eslint-patch@1.6.1:
-    resolution: {integrity: sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==}
+  /@rushstack/eslint-patch@1.7.2:
+    resolution: {integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==}
     dev: true
 
   /@soda/friendly-errors-webpack-plugin@1.8.1(webpack@4.47.0):
@@ -897,6 +897,12 @@ packages:
 
   /@types/minimist@1.2.5:
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
+    dev: false
+
+  /@types/node@20.11.22:
+    resolution: {integrity: sha512-/G+IxWxma6V3E+pqK1tSl2Fo1kl41pK1yeCyDsgkF9WlVAme4j5ISYM2zR11bgLFJGLN5sVK40T4RJNuiZbEjA==}
+    dependencies:
+      undici-types: 5.26.5
     dev: false
 
   /@types/node@20.11.22:
