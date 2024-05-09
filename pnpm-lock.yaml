@@ -31,7 +31,7 @@ dependencies:
     version: 3.4.22(typescript@4.9.5)
   vue-router:
     specifier: ^4.2.5
-    version: 4.3.0(vue@3.4.22)
+    version: 4.3.2(vue@3.4.22)
   vue3-autocomplete:
     specifier: ^1.0.0
     version: 1.0.4(@vue/cli-service@4.5.19)(eslint@9.0.0)(webpack@5.91.0)
@@ -45,7 +45,7 @@ devDependencies:
     version: 1.10.2
   '@vitejs/plugin-vue':
     specifier: ^5.0.0
-    version: 5.0.4(vite@5.2.8)(vue@3.4.22)
+    version: 5.0.4(vite@5.2.9)(vue@3.4.22)
   '@vue/eslint-config-prettier':
     specifier: ^9.0.0
     version: 9.0.0(eslint@9.0.0)(prettier@3.2.5)
@@ -1032,7 +1032,7 @@ packages:
       server-only: 0.0.1
     dev: false
 
-  /@vitejs/plugin-vue@5.0.4(vite@5.2.8)(vue@3.4.22):
+  /@vitejs/plugin-vue@5.0.4(vite@5.2.9)(vue@3.4.22):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
@@ -7918,6 +7918,14 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  /semver@7.6.1:
+    resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /send@0.18.0(supports-color@6.1.0):
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -9339,8 +9347,8 @@ packages:
     dev: false
     optional: true
 
-  /vue-router@4.3.0(vue@3.4.22):
-    resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
+  /vue-router@4.3.2(vue@3.4.22):
+    resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
