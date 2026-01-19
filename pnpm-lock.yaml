@@ -44,7 +44,7 @@ importers:
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.6.1
-        version: 1.10.4
+        version: 1.15.0
       '@vitejs/plugin-vue':
         specifier: ^5.0.0
         version: 5.1.4(vite@5.4.21(@types/node@25.0.9)(sass@1.79.4))(vue@3.5.11(typescript@4.9.5))
@@ -556,8 +556,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rushstack/eslint-patch@1.10.4':
-    resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
+  '@rushstack/eslint-patch@1.15.0':
+    resolution: {integrity: sha512-ojSshQPKwVvSMR8yT2L/QtUkV5SXi/IfDiJ4/8d6UbTPjiHVmxZzUAzGD8Tzks1b9+qQkZa0isUOvYObedITaw==}
 
   '@soda/friendly-errors-webpack-plugin@1.8.1':
     resolution: {integrity: sha512-h2ooWqP8XuFqTXT+NyAFbrArzfQA7R6HTezADrvD9Re8fxMLTPPniLdqVTdDaO0eIoLaAwKT+d6w+5GeTk7Vbg==}
@@ -5801,7 +5801,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.55.2':
     optional: true
 
-  '@rushstack/eslint-patch@1.10.4': {}
+  '@rushstack/eslint-patch@1.15.0': {}
 
   '@soda/friendly-errors-webpack-plugin@1.8.1(webpack@4.47.0)':
     dependencies:
