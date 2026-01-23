@@ -15,7 +15,7 @@
     "aviation-math": "^1.7.0",
     "cardinal-direction": "^1.1.1",
     "install": "^0.13.0",
-    "pinia": "^2.1.7",
+    "pinia": "^3.0.0",
     "postcss": "^8.4.48",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5",
